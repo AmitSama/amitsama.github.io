@@ -162,6 +162,11 @@ hr.small {
     -o-background-size: cover;
 }
 
+.icon-heart {
+  font-size: 150%;
+  color: red;
+}
+
 /* About */
 
 .about {
