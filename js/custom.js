@@ -42,3 +42,7 @@ $(document).ready(function() {
 function onOverlayPortfolio() {
   document.getElementById("overlay-onClick-portfolio-image").style.display = "block";
 }
+
+function offOverlayPortfolio() {
+  document.getElementById("overlay-onClick-portfolio-image").style.display = "none";
+}
