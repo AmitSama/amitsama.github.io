@@ -38,3 +38,7 @@ $(document).ready(function() {
     $('#map_iframe').addClass('scrolloff');
   });
 });
+// for overlay effect on portfolio images
+function onOverlayPortfolio() {
+  document.getElementById("overlay-onClick-portfolio-image").style.display = "block";
+}
