@@ -249,7 +249,7 @@ hr.small {
 /* text inside overlay div */
 #text-overlay-protfolio-image {
   position: absolute;
-  top: 30%;
+  top: 60%;
   left: 50%;
   font-size: 50px;
   color: white;
@@ -271,6 +271,7 @@ hr.small {
 .p-font {
   font-size: 20px;
 }
+
 
 /* image logo education */
 .ima-logo {

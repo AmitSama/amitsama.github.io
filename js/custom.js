@@ -46,3 +46,15 @@ function onOverlayPortfolio() {
 function offOverlayPortfolio() {
   document.getElementById("overlay-onClick-portfolio-image").style.display = "none";
 }
+
+// show abstract description, for portfolio item
+// function showAbstractDesc(id) {
+function showAbstractDesc() {
+  var ele = document.getElementById("abstract-desc-thesis");
+  // if (ele.style.display === "none") {
+    ele.style.display = "block";
+  // }
+  // else {
+  //   ele.style.display = "none";
+  // }
+}
