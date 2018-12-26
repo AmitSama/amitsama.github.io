@@ -257,6 +257,21 @@ hr.small {
   -ms-transform: translate(-50%,-50%);
 }
 
+/* anchor color in portfolio section */
+.a-col-portfolio {
+  color: red;
+}
+
+/* heading font size for portfolio section */
+.h1-font {
+  font-size: 60px;
+}
+
+/* paragraph font for portfolio section  */
+.p-font {
+  font-size: 20px;
+}
+
 /* image logo education */
 .ima-logo {
   width: 200%;
