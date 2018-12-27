@@ -244,6 +244,8 @@ hr.small {
   background-color: rgba(0, 0, 255, 0.90);
   z-index: 2;
   cursor: pointer;
+  /* enbaling scrolling in y axis */
+  overflow-y: scroll;
 }
 
 /* text inside overlay div */
