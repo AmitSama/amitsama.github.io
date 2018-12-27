@@ -1,0 +1,27 @@
+<div id="abstract-desc-thesis">
+    <p class="p-font">
+      The growing dynamic nature of business processes (BPs) requires ad-hoc decision making.
+      Often these processes involve participants and data from various organizations.
+      Owing to their dynamic decision making and multi organizational nature, a centralized
+      approach to execute these processes would be impractical in cases such as data
+      privacy. This leads to the distributed approach for their execution. A collection of
+      workflow units (WFUs) realizes a distributed business process (DBP) where each WFU is a
+      distributed system component that communicates over publish/subscribe abstraction
+      and is responsible for the automatic execution of a fragment of data or control-flow of
+      a DBP. This necessitates the need of making distributed data-centric workflow management
+      system (based on WFUs) elastic so that the WFUs could be modified during runtime.
+      Here the modification of a WFU does not refer to the modification of its business logic
+      but the external parameters like the nodes they are running on, or the brokers they are
+      connected to.
+      <br>
+      This thesis provides a safe protocol for WFU movement in such systems based on
+      publish/subscribe. Here the movement of a WFU means that a WFU can to made to
+      run on a different node or can be made to connect to a different broker during runtime.
+      The implementation shows that the protocol can be easily applied on any content-based
+      pub-sub core. Protocol is implemented and tested on <a class="a-col-portfolio"
+      href="https://www.semanticscholar.org/paper/D2WORM-A-Management-Infrastructure-for-Distributed-Jergler-Sadoghi/031edd33e412aa1df3da5eba11d49c8037eebeff">
+      D<sup>2</sup>WORM</a> which is a webbased
+      editor for workflow management system based on <a class="a-col-portfolio" href="http://www.gwtproject.org/">GWT</a>.
+      Experiments show that the protocol scales linearly with the number of WFU movements.
+    </p>
+</div>
