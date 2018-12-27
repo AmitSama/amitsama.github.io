@@ -41,10 +41,16 @@ $(document).ready(function() {
 // for overlay effect on portfolio images
 function onOverlayPortfolio() {
   document.getElementById("overlay-onClick-portfolio-image").style.display = "block";
+
+  //settings for the backgroud (to be made still, non-scrollable)
+  // document.body.classList.toggle('noscroll', 'true');
+  // document.querySelector('#overlay-onClick-portfolio-image').setAttribute('aria-hidden', 'false');
+  // document.querySelector('#overlay-onClick-portfolio-image').scrollTop = 0;
 }
 
 function offOverlayPortfolio() {
   document.getElementById("overlay-onClick-portfolio-image").style.display = "none";
+  // location.reload();
 }
 
 // show abstract description, for portfolio item
