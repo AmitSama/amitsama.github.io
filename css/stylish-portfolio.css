@@ -277,8 +277,9 @@ hr.small {
 
 /* image logo education */
 .ima-logo {
-  width: 200%;
-  height: 100%;
+  /* width: 200%;
+  height: 100%; */
+  margin: 0 auto;
 }
 
 /* image logo employer */
