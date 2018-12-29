@@ -251,12 +251,10 @@ hr.small {
 /* text inside overlay div */
 #text-overlay-protfolio-image {
   position: absolute;
-  top: 60%;
-  left: 50%;
   font-size: 50px;
   color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+  margin: 15vh auto;
+  padding: 30px;
 }
 
 /* anchor color in portfolio section */
