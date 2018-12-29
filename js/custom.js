@@ -39,17 +39,23 @@ $(document).ready(function() {
   });
 });
 // for overlay effect on portfolio images
-function onOverlayPortfolio() {
-  document.getElementById("overlay-onClick-portfolio-image").style.display = "block";
-
+function onOverlayPortfolio(id) {
+  // document.getElementById("overlay-onClick-portfolio-image").style.display = "block";
+  console.log("Id found here is " + "Amit ===> " + id);
+  var ele = document.getElementById(id);
+  if (!(ele === null || ele === undefined || ele === 0 || ele === "" || ele === NaN)) {
+    console.log(" ELement found !");
+  }
+  ele.style.display = "block";
   //settings for the backgroud (to be made still, non-scrollable)
   // document.body.classList.toggle('noscroll', 'true');
   // document.querySelector('#overlay-onClick-portfolio-image').setAttribute('aria-hidden', 'false');
   // document.querySelector('#overlay-onClick-portfolio-image').scrollTop = 0;
 }
 
-function offOverlayPortfolio() {
-  document.getElementById("overlay-onClick-portfolio-image").style.display = "none";
+function offOverlayPortfolio(id) {
+  // document.getElementById("overlay-onClick-portfolio-image").style.display = "none";
+  document.getElementById(id).style.display = "none";
   // location.reload();
 }
 
