@@ -249,7 +249,7 @@ hr.small {
 }
 
 /* text inside overlay div */
-#text-overlay-protfolio-image {
+.text-overlay-protfolio-image {
   position: absolute;
   font-size: 50px;
   color: white;
