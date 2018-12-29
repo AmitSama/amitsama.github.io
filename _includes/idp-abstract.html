@@ -5,6 +5,42 @@
       <br>
       <b>(multi-) sensor side –> digital processing –> (multi-) actuator side.</b>
       <br>
+      In the context of this system, there exist multiple alternatives for
+      realizing the “digital processing” part. They had explored two
+      options – the Arduino platform, and the RTAI/Linux/Desktop PC
+      platform. However, in both cases, they had run into one shortcoming or
+      the other. For example, in case of Arduino, on-board memory for storing
+      haptic texture data after recording or for display is very limited (of the
+      order of kilobytes). Moreover computational capacity is limited, so that
+      complex signal processing (e.g. multichannel haptic signal compression)
+      cannot be performed. On the other hand, with the RTAI/Linux/Desktop
+      PC platform, there are many gigabytes of RAM available, as well as high
+      computational capacity. However, the rate required for implementing
+      SPI communication with multiple DAC chips is not supported by this
+      setup. Moreover, this setup sacrifices on portability. Therefore, with
+      these considerations, the BeagleBone Black (BBB) platform seemed to be
+      a very attractive solution for the following reasons – smartphone-like
+      form factor, multi-channel ADC capabilities, a powerful TI SitaraTM
+      AM335x ARM CortexTM-A8 Microprocessor coupled with 512 MB on-
+      board RAM, and hardware SPI pins that can be used for driving DAC
+      (actuator) side.
+      <br>
+      <br>
+      <img src="img/projects/idp.png" alt="idp">
+    </p>
+    <p class="p-font">
+      The figure above shows the sensor side of this system. The haptuator box
+      shown on the right acts as a haptic sensor as well as an actuator. The
+      sensor side has the current sensors mediating between the haptuator box
+      and the BBB (as shown in the figure), whereas the actuator side has DAC
+      chips followed by power amplifiers for driving the haptuator box.
+    </p>
+    <h3>My work</h3>
+    <p class="p-font">
+      The system got to be made functional as an actuator. This included
+      writing code enabling digital information stored on BBB to be sent to the
+      DAC chips using SPI protocol.The implementation was done in C language.
+      <a class="a-col-portfolio" href="https://bitbucket.org/sam0645/idp">Link to the repository</a>. 
     </p>
 </div>
 <button type="button" class="btn-dark" onClick="offOverlayPortfolio('idp-desc')">Close</button>
