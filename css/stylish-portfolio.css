@@ -232,7 +232,7 @@ hr.small {
 }
 
 /* for overlay effect */
-#overlay-onClick-portfolio-image {
+.overlay-onClick-portfolio-image {
   position: fixed;
   display: none;
   width: 45%;
