@@ -65,10 +65,14 @@ function offOverlayPortfolio(id) {
 // show abstract description, for portfolio item
 function showAbstractDesc(id) {
   // console.log(id + " =========== ");
+  var v = 'read-' + id;
+  console.log("Id for read abstract element " + v);
   var ele = document.getElementById(id);
   if (ele.style.display === "none") {
     ele.style.display = "block";
+    document.getElementById(v).innerHTML = "Hide Abstract";
   } else {
     ele.style.display = "none";
+    document.getElementById(v).innerHTML = "Read Abstract";
   }
 }
