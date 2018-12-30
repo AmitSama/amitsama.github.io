@@ -41,12 +41,15 @@ $(document).ready(function() {
 // for overlay effect on portfolio images
 function onOverlayPortfolio(id) {
   // document.getElementById("overlay-onClick-portfolio-image").style.display = "block";
-  console.log("Id found here is " + "Amit ===> " + id);
+  // console.log("Id found here is " + "Amit ===> " + id);
   var ele = document.getElementById(id);
   if (!(ele === null || ele === undefined || ele === 0 || ele === "" || ele === NaN)) {
-    console.log(" ELement found !");
+    // console.log(" ELement found !");
   }
   ele.style.display = "block";
+  var v = 'abstract' + '-' + id;
+  console.log(v + " new Id");
+  document.getElementById(v).style.display = "none";
   //settings for the backgroud (to be made still, non-scrollable)
   // document.body.classList.toggle('noscroll', 'true');
   // document.querySelector('#overlay-onClick-portfolio-image').setAttribute('aria-hidden', 'false');
