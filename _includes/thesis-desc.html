@@ -9,8 +9,10 @@
     </p>
 
     <div id="abstract">
-      <a class="a-col-portfolio" onclick="showAbstractDesc('abstract-thesis-desc')" href="#">
-        <p class="p-font"><i>Read Abstract</i></p>
+      <a class="a-col-portfolio" onclick="showAbstractDesc('abstract-desc-thesis')" href="#">
+        <!-- Id of Read Abstract should follow pattern 'read-' + parentId
+        Example 'read-abstract-desc-thesis' -->
+        <p id="read-abstract-desc-thesis" class="p-font text-left"><i>Read Abstract</i></p>
       </a>
       <hr>
       {% include thesis-abstract.html %}
