@@ -68,8 +68,13 @@ function makeChangesForOverlayForSmallDevices (id) {
 }
 
 function offOverlayPortfolio(id) {
-  document.getElementById(id).style.display = "none";
+  var x = document.getElementById(id);
+  x.style.display = "none";
   document.body.style.overflow = 'scroll';
+
+  //resetting sizes for next portfolio
+  x.style.left = "30%";
+  x.style.width = "45%";
 }
 
 // show abstract description, for portfolio item
