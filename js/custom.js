@@ -56,6 +56,16 @@ function onOverlayPortfolio(id) {
   document.body.style.overflow = 'hidden';
 }
 
+// making overlay div appar full screen for small devices
+function makeChangesForOverlayForSmallDevices (id) {
+  var x = document.getElementById(id);
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    x.style.left = 0;
+    x.style.width = "100%";
+    console.log("Making changes on element left:0; for device have max-width 500px " + x.style.width);
+  }
+}
+
 function offOverlayPortfolio(id) {
   document.getElementById(id).style.display = "none";
   document.body.style.overflow = 'scroll';
