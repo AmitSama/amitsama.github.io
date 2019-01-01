@@ -53,9 +53,8 @@ function onOverlayPortfolio(id) {
 }
 
 function offOverlayPortfolio(id) {
-  // document.getElementById("overlay-onClick-portfolio-image").style.display = "none";
   document.getElementById(id).style.display = "none";
-  // location.reload();
+  document.body.style.overflow = 'scroll';
 }
 
 // show abstract description, for portfolio item
