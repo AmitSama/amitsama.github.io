@@ -48,6 +48,7 @@ function onOverlayPortfolio(id) {
   if (!(ele === null || ele === undefined || ele === 0 || ele === "" || ele === NaN)) {
     // console.log(" ELement found !");
   }
+  makeChangesForOverlayForSmallDevices(id);
   ele.style.display = "block";
   var v = 'abstract' + '-' + id;
   console.log(v + " new Id");
