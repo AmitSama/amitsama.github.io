@@ -40,8 +40,6 @@ $(document).ready(function() {
 });
 // for overlay effect on portfolio images
 function onOverlayPortfolio(id) {
-  // document.getElementById("overlay-onClick-portfolio-image").style.display = "block";
-  // console.log("Id found here is " + "Amit ===> " + id);
   var ele = document.getElementById(id);
   if (!(ele === null || ele === undefined || ele === 0 || ele === "" || ele === NaN)) {
     // console.log(" ELement found !");
