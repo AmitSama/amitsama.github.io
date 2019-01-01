@@ -49,9 +49,7 @@ function onOverlayPortfolio(id) {
   console.log(v + " new Id");
   document.getElementById(v).style.display = "none";
   //settings for the backgroud (to be made still, non-scrollable)
-  // document.body.classList.toggle('noscroll', 'true');
-  // document.querySelector('#overlay-onClick-portfolio-image').setAttribute('aria-hidden', 'false');
-  // document.querySelector('#overlay-onClick-portfolio-image').scrollTop = 0;
+  document.body.style.overflow = 'hidden';
 }
 
 function offOverlayPortfolio(id) {
