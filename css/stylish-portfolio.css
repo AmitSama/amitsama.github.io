@@ -286,15 +286,26 @@ hr.small {
 /* image logo education */
 .ima-logo {
   margin: 0 auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: inherit;
 }
 
 /* image logo employer */
 .ima-logo-emp {
   margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: inherit;
 }
 
 .ima-logo-emp-small {
   margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: inherit;
+}
+
 /* works best when image is square */
 .round {
   border-radius: 100%;
