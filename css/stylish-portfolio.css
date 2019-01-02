@@ -295,6 +295,9 @@ hr.small {
 
 .ima-logo-emp-small {
   margin: 0 auto;
+/* works best when image is square */
+.round {
+  border-radius: 100%;
 }
 
 /* Call to Action */
