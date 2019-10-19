@@ -4,7 +4,8 @@
       <div class="col-lg-11 col-lg-offset-1 text-center">
         <h2>Research and Personal Projects</h2>
         <hr class="small">
-        <div class="row">
+
+        <div id="main-projects-section" class="row">
 
         <div class="col-md-6">
           <div class="portfolio-item">
@@ -50,6 +51,12 @@
             </div>
           </div>
           <!-- continuing education -->
+
+      </div>
+
+
+        <div id="extended-projects-section" class="row">
+
           <div class="col-md-3 subject-sec"></div>
           <div id="amit" class="col-md-6 subject-sec">
             <div class="portfolio-item">
@@ -60,9 +67,11 @@
             </div>
           </div>
           <!-- subjects taken in school, btech and university -->
+
         </div>
         <!-- /.row (nested) -->
-        <a href="#subject-sec" onClick="displayDiv('amit')" class="btn btn-dark">View More Items</a>
+
+        <a id="buttonToggleExtendedSection" href="#subject-sec" onClick="toggleExtendedSectionDisplay('extended-projects-section')" class="btn btn-dark">View More Items</a>
       </div>
       <!-- /.col-lg-10 -->
     </div>
