@@ -91,3 +91,18 @@ function showAbstractDesc(id) {
     document.getElementById(v).innerHTML = "Read Abstract";
   }
 }
+
+function toggleExtendedSectionDisplay(id) {
+  console.log("Id of the division to be displayed is " + id);
+  var eleExtendedSection = document.getElementById(id);
+  var buttonExtendSection = document.getElementById('buttonToggleExtendedSection');
+  if (eleExtendedSection.style.display === "none") {
+    eleExtendedSection.style.display = "block";
+    buttonExtendSection.innerHTML = "View Less Items";
+    buttonExtendSection.href = "#extended-projects-section";
+  } else {
+    eleExtendedSection.style.display = "none";
+    buttonExtendSection.innerHTML = "View More Items";
+    buttonExtendSection.href = "#main-projects-section";
+  }
+}
