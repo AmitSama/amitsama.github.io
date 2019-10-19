@@ -149,7 +149,6 @@ hr.small {
 }
 
 /* Header */
-
 .header {
     display: table;
     position: relative;
@@ -342,6 +341,7 @@ hr.small {
 
 footer {
     padding: 100px 0;
+    background-color: #d9edf7;
 }
 
 /* abstract btn-dark size */
