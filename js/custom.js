@@ -95,7 +95,12 @@ function showAbstractDesc(id) {
 function toggleExtendedSectionDisplay(id) {
   console.log("Id of the division to be displayed is " + id);
   var eleExtendedSection = document.getElementById(id);
-  eleExtendedSection.style.display = "block";
   var buttonExtendSection = document.getElementById('buttonToggleExtendedSection');
-  buttonExtendSection.innerHTML = "Show less items";
+  if (eleExtendedSection.style.display === "none") {
+    eleExtendedSection.style.display = "block";
+    buttonExtendSection.innerHTML = "View Less Items";
+  } else {
+    eleExtendedSection.style.display = "none";
+    buttonExtendSection.innerHTML = "View More Items";
+  }
 }
