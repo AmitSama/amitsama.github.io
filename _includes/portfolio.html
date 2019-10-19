@@ -50,10 +50,19 @@
             </div>
           </div>
           <!-- continuing education -->
-
+          <div class="col-md-3 subject-sec"></div>
+          <div id="amit" class="col-md-6 subject-sec">
+            <div class="portfolio-item">
+              <a href="#desc-contedu">
+                <img onclick="onOverlayPortfolio('desc-contedu')" class="img-portfolio img-responsive" src="img/presentation4.jpg">
+              </a>
+              {% include contedu-desc.html %}
+            </div>
+          </div>
+          <!-- subjects taken in school, btech and university -->
         </div>
         <!-- /.row (nested) -->
-        <a href="#" class="btn btn-dark">View More Items</a>
+        <a href="#subject-sec" onClick="displayDiv('amit')" class="btn btn-dark">View More Items</a>
       </div>
       <!-- /.col-lg-10 -->
     </div>

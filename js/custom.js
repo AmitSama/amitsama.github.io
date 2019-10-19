@@ -91,3 +91,9 @@ function showAbstractDesc(id) {
     document.getElementById(v).innerHTML = "Read Abstract";
   }
 }
+
+function displayDiv(id) {
+  console.log("Id of the division to be displayed is " + id);
+  var ele = document.getElementById(id);
+  ele.style.display = "block";
+}

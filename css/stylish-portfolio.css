@@ -266,6 +266,10 @@ hr.small {
   padding: 30px;
 }
 
+.subject-sec {
+  display: none;
+}
+
 /* anchor color in portfolio section */
 .a-col-portfolio:link,
 .a-col-portfolio:hover,
