@@ -10,10 +10,13 @@ url: "" # the base hostname & protocol for your site
 
 # User setting
 owner:
-email:
+email: amitsama.tum@gmail.com
 facebook_username:
 twitter_username:
-github_username:
+github_username: AmitSama
+bitbucket_username: sam0645
+linkedin_username: in/amit-s-41424a22
+
 address:
   - line:
   - line:
