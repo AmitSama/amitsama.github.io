@@ -99,8 +99,10 @@ function toggleExtendedSectionDisplay(id) {
   if (eleExtendedSection.style.display === "none") {
     eleExtendedSection.style.display = "block";
     buttonExtendSection.innerHTML = "View Less Items";
+    buttonExtendSection.href = "#extended-projects-section";
   } else {
     eleExtendedSection.style.display = "none";
     buttonExtendSection.innerHTML = "View More Items";
+    buttonExtendSection.href = "#main-projects-section";
   }
 }
