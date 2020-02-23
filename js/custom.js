@@ -85,10 +85,10 @@ function showAbstractDesc(id) {
   var ele = document.getElementById(id);
   if (ele.style.display === "none") {
     ele.style.display = "block";
-    document.getElementById(v).innerHTML = "Hide Abstract";
+    document.getElementById(v).innerHTML = "Read Less";
   } else {
     ele.style.display = "none";
-    document.getElementById(v).innerHTML = "Read Abstract";
+    document.getElementById(v).innerHTML = "Read More";
   }
 }
 
