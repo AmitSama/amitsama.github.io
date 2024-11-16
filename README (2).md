@@ -18,6 +18,11 @@ See the site in action at https://volny.github.io/stylish-portfolio-jekyll/
 - docker run -p 4000:4000 -it --rm --name ruby_v1.0.0 amit0645/ruby:v1.0.0
 - docker run --add-host=localhost=192.168.0.151 -it --rm --name ruby_v1.0.0 amit0645/ruby:v1.0.0
 
-## Changing firewall rule
+## Changing firewall rule - Not Working
 - iptables -t nat -A OUTPUT -o lo -p tcp --dport 80 -j REDIRECT --to-port 4000
 - iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 4000
+
+## Running jekyll with url
+- bundle exec jekyll serve --livereload --open-url http://192.168.0.151:4000/
+- jekyll serve --livereload --open-url http://192.168.0.151:4000/
+- jekyll serve --host 0.0.0.0 #works using Bcast
