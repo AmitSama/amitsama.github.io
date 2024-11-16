@@ -7,11 +7,9 @@ RUN apk update && \
     apk upgrade && \
     apk add --no-cache gcc g++ make sudo && \
 	adduser -g demo --disabled-password demo && \
-    echo "demo ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/demo && chmod 0440 /etc/sudoers.d/demo
-
-USER demo
-
-RUN cd /home/demo && \ 
+    echo "demo ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/demo && chmod 0440 /etc/sudoers.d/demo && \
+	su demo && \
+	cd /home/demo && \
 	gem install jekyll bundler
-
+	
 CMD ["/bin/sh"]
