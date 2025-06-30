@@ -32,3 +32,11 @@ See the site in action at https://volny.github.io/stylish-portfolio-jekyll/
 - bundle exec jekyll serve --livereload --open-url http://192.168.0.151:4000/
 - jekyll serve --livereload --open-url http://192.168.0.151:4000/
 - jekyll serve --host 0.0.0.0 #works using Bcast
+
+## Installing dependencies using bundler (package manager for ruby)
+- gem install bundler (creates Gemfile and Gemfile.lock)
+- add gem 'rails' AND gem 'jekyll'
+- bundle install (to install all packages)
+- bundle exec jekyll serve --host 0.0.0.0
+
+## Next task to using ruby:alpine flavour for local testing
